@@ -40,12 +40,12 @@ int Train::getLength() {
             }
         } else {
             while (!temp->light) {
-                len++;
+                count++;
                 temp = temp->right;
                 countOp++;
             }
             temp->light = false;
-            for (int a = 0; a < len; ++a) {
+            for (int a = 0; a < count; ++a) {
                 temp = temp->left;
                 countOp++;
             }
